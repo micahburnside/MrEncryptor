@@ -14,7 +14,7 @@ class Question {
       type: 'list',
       name: 'listChoice',
       message: 'Select an option from the menu',
-      choices: Question.menuChoices,
+      choices: Question.listChoices,
     };
   }
 }
