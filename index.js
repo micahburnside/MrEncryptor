@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 import inquirer from 'inquirer';
+import Question from "./Question.js";
 
 inquirer
   .prompt([
-    /* Pass your questions in here */
-    console.log("Question Test")
-
+    console.log("Question Test"),
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
