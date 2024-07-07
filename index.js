@@ -4,7 +4,7 @@ import Question from "./Question.js";
 
 inquirer
   .prompt([
-    console.log("Question Test"),
+    Question.getListChoices()
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
@@ -12,9 +12,9 @@ inquirer
   })
   .catch((error) => {
     if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
+      console.error('Prompt could not be rendered in current environment', error)
     } else {
-      // Something else went wrong
+      console.error('Something went wrong:', error);
     }
   });
 

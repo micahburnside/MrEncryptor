@@ -1,6 +1,6 @@
 class Question {
 
-  static menuChoices = ['choice 1', 'choice 2', 'choice 3', 'choice 4', 'choice 5', 'choice 6'];
+  static listChoices = ['choice 1', 'choice 2', 'choice 3', 'choice 4', 'choice 5', 'choice 6'];
 
   constructor(type, name, message, choices) {
     this.type = type;
@@ -9,10 +9,10 @@ class Question {
     this.choices = choices;
   }
 
-  static getMenuChoices() {
+  static getListChoices() {
     return {
       type: 'list',
-      name: 'menuChoice',
+      name: 'listChoice',
       message: 'Select an option from the menu',
       choices: Question.menuChoices,
     };
