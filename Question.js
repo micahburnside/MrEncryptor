@@ -5,6 +5,10 @@ constructor(type, name, message, choices) {
   this.message = message;
   this.choices = choices;
   }
+
+  static getMenuChoices() {
+
+  }
 }
 
 export default Question;
