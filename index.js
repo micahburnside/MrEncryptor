@@ -8,7 +8,7 @@ inquirer
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
-    console.log("Answer Test")
+    console.log(answers)
   })
   .catch((error) => {
     if (error.isTtyError) {
