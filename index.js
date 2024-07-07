@@ -4,9 +4,12 @@ import inquirer from 'inquirer';
 inquirer
   .prompt([
     /* Pass your questions in here */
+    console.log("Question Test")
+
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
+    console.log("Answer Test")
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -15,3 +18,4 @@ inquirer
       // Something else went wrong
     }
   });
+
