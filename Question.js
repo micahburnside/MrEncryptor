@@ -1,7 +1,7 @@
+// Question.js
+import Choices from './listChoices.js';
+
 class Question {
-
-  static listChoices = ['choice 1', 'choice 2', 'choice 3', 'choice 4', 'choice 5', 'choice 6'];
-
   constructor(type, name, message, choices) {
     this.type = type;
     this.name = name;
@@ -9,12 +9,14 @@ class Question {
     this.choices = choices;
   }
 
-  static getListChoices() {
+  static getListChoices(menu) {
+    let choices = menu.getChoices();
+
     return {
       type: 'list',
       name: 'listChoice',
       message: 'Select an option from the menu',
-      choices: Question.listChoices,
+      choices: choices,
     };
   }
 }
