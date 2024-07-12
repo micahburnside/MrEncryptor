@@ -4,14 +4,15 @@ import Question from "./Question.js";
 import Choices from "./Choices.js";
 // Get Menu1 Choices
 
-const menu1 = Choices.getMenu7();
+const menu = Choices.getMenu1();
 
 inquirer
   .prompt([
-    Question.getListChoices(menu1)
+    Question.getListChoices(menu)
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
+
     console.log(answers)
   })
   .catch((error) => {
