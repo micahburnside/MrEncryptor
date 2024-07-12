@@ -1,5 +1,5 @@
 // Question.js
-import Choices from './listChoices.js';
+import Choices from './Choices.js';
 
 class Question {
   constructor(type, name, message, choices) {
