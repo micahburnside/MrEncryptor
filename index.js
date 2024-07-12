@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import inquirer from 'inquirer';
 import Question from "./Question.js";
-import Choices from "./listChoices.js";
+import Choices from "./Choices.js";
 // Get Menu1 Choices
 
-const menu1 = Choices.getMenu1();
+const menu1 = Choices.getMenu7();
 
 inquirer
   .prompt([

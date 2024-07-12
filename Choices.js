@@ -33,7 +33,11 @@ class Choices {
   }
 
   static getMenu7() {
-    return new Choices('Menu7 choice1', 'Menu7 choice2', 'Menu7 choice3');
+    return new Choices('Menu7 choice1', 'Menu7 choice2', 'Menu7 choice3', 'Menu7 choice4');
+  }
+
+  static doChoice4() {
+    return Actions.encryptFile()
   }
 
 }
