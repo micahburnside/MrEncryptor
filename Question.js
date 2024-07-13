@@ -1,5 +1,5 @@
 // Question.js
-import Choices from './Choices.js';
+import Menu from './Menu.js';
 
 class Question {
   constructor(type, name, message, choices) {
@@ -9,8 +9,8 @@ class Question {
     this.choices = choices;
   }
 
-  static getListChoices(menu) {
-    let choices = menu.getChoices();
+  static showLists(menu) {
+    let choices = menu.showMenu();
 
     return {
       type: 'list',

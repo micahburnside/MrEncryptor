@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 import inquirer from 'inquirer';
 import Question from "./Question.js";
-import Choices from "./Choices.js";
+import Menu from "./Menu.js";
 // Get Menu1 Choices
 
-const menu = Choices.getMenu1();
+const menu = Menu.getMenu1();
 
 inquirer
   .prompt([
-    Question.getListChoices(menu)
+    Question.showLists(menu)
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
